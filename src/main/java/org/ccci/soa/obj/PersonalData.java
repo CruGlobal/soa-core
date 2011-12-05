@@ -27,6 +27,7 @@ public class PersonalData {
     private String privacyCode;
     private String language;
     private String spouseGlobalId;
+    private String ssn;
     
     @SkipFieldForDiff private String lastUpdateDttm;
     @SkipFieldForDiff private String lastUpdateSystem;
@@ -202,5 +203,15 @@ public class PersonalData {
 
     public String getLastUpdateUser() {
         return lastUpdateUser;
+    }
+
+    public String getSsn()
+    {
+        return ssn;
+    }
+
+    public void setSsn(String ssn)
+    {
+        this.ssn = ssn;
     }
 }
